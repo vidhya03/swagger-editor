@@ -25,7 +25,8 @@
     "basic-auth.yaml",
     "security.yaml",
     "instagram.yaml",
-    "twitter.yaml"
+    "twitter.yaml",
+    "http-patch-demo-swagger.json"
   ],
   "autocompleteExtension": {},
   "useBackendForStorage": false,
