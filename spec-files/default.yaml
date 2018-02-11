@@ -77,6 +77,25 @@ paths:
       responses:
         '200':
           description: ''
+  /person/search:
+    post:
+      description: Search by any term
+      operationId: simpleSearch
+      consumes:
+        - text/plain
+      parameters:
+        - in: body
+          name: seachTerms
+          description: Search terms
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          schema:
+            $ref: '#/definitions/Person'
+           
   /upload/fileupload:
     post:
       description: Any file upload
@@ -87,6 +106,7 @@ paths:
       responses:
         '200':
           description: return the size of the file in bytes
+
 definitions:
   Person:
     properties:
